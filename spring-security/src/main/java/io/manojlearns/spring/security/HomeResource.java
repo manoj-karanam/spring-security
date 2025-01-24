@@ -9,9 +9,20 @@ public class HomeResource {
 
 
     @GetMapping("/")
-    public String temp(){
+    public String home(){
             return("<h1>Welcome<h1>");
         }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return("<h1>Welcome Admin<h1>");
+    }
+
+    @GetMapping("/user")
+    public String user(){
+        return("<h1>Welcome either User or Admin<h1>");
+    }
+
     }
 
 
